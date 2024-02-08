@@ -1,0 +1,32 @@
+.footer {
+    min-height: 432px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 146px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 708px;
+    }
+    &__links {
+        list-style-type: none;
+        padding: 0;
+    }
+    &__link {
+        font-size: 18px;
+        color: #DE343D;
+        margin-top: 20px;
+        span {
+            font-size: 21px;
+            color: #DE343D; 
+            font-family: 'ultrabold';
+        }
+        &:nth-child(2),
+        &:nth-child(6),
+        &:nth-child(10) {
+            margin-top: 30px;
+        }
+    }
+}

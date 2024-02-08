@@ -1,0 +1,39 @@
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 402px;
+    min-height: 532px;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 377px;
+        background-color: #f9f9f9;
+    }
+    &__info {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__title {
+        font-size: 22px;
+        color: #9c9c9c;
+    }
+    &__subtitle {
+        font-size: 25px;
+        color: #040404;
+    }
+    &__price {
+        font-size: 20px;
+        color: #040404;
+    }
+    &__size {
+        font-size: 19px;
+        color: #DE343D;
+    }
+}

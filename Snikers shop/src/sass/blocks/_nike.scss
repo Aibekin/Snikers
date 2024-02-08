@@ -1,0 +1,12 @@
+.nike {
+    width: 100%;
+    height: 920px;
+    background: url('../img/nike.jpg') center (center / cover) no-repeat;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transform: translateY(-100%);
+    }
+}

@@ -1,0 +1,110 @@
+.catalog {
+    padding-top: 87px;
+    padding-bottom: 280px;
+    min-height: 1880px;
+    position: relative;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 298px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+    &__filter,
+    &__sortby {
+        width: 160px;
+        height: 51px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        color: #808080;
+        border: 1px solid #dedede;
+        background-color: #fff;
+        margin-right: 30px;
+        cursor: pointer;
+        img {
+            margin-right: 3px;
+        }
+        &:active {
+            box-shadow: inset 0 0 4px 4px #808080;
+        }
+    }
+    &__list,
+    &__largeicon {
+        width: 55px;
+        height: 50px;
+        background-color: #fff;
+        border: 1px solid #dedede;
+        cursor: pointer;
+        &:active {
+            box-shadow: inset 0 0 4px 4px #808080;
+        }
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 302px;
+        margin-top: 93px;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+    .hidden {
+        display: none;
+    }
+    #catalog__cards3.show {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 302px;
+        margin-top: 93px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    &__opacity1,
+    &__opacity2,
+    &__opacity3 {
+        width: 402px;
+        height: 532px;
+        position: absolute;
+        z-index: 10;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.75) 100%);
+        &-hidden {
+            display: none;
+        }
+    }
+    &__opacity1 {
+        left: 302px;
+        bottom: 491px;
+    }
+    &__opacity2 {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 491px;
+    }
+    &__opacity3 {
+        right: 302px;
+        bottom: 491px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        &__see_all {
+            width: 175px;
+            height: 65px;
+            background-color: #fff;
+            border: 1px solid #000;
+            color: #000;
+            font-size: 25px;
+            transition: all 0.5s;
+            cursor: pointer;
+            &-active {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}

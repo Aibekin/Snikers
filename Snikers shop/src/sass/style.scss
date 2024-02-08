@@ -1,0 +1,27 @@
+* {
+    @font-face {
+        font-family: 'regular';
+        src: url('../fonts/MonumentExtended-Regular.otf');
+    }
+    @font-face {
+        font-family: 'ultrabold';
+        src: url('../fonts/MonumentExtended-Ultrabold.otf');
+    }
+    box-sizing: border-box;
+    font-family: 'regular';
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+@import 'blocks/header.scss';
+@import 'blocks/main';
+@import 'blocks/topsellers.scss';
+@import 'blocks/slide.scss';
+@import 'blocks/reasons.scss';
+@import 'blocks/nike.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/footer.scss';
